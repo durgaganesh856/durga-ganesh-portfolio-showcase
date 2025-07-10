@@ -17,19 +17,19 @@ const Contact = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       label: "Email",
-      value: "durga.ganesh@email.com",
-      href: "mailto:durga.ganesh@email.com"
+      value: "durgaganesh856@gmail.com",
+      href: "mailto:durgaganesh856@gmail.com"
     },
     {
       icon: <Phone className="h-5 w-5" />,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 99126 26856",
+      href: "tel:+919912626856"
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       label: "Location",
-      value: "Available Remotely",
+      value: "Hyderabad, India",
       href: null
     },
     {
