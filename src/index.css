@@ -8,39 +8,39 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 26% 7%;
-    --foreground: 220 17% 95%;
+    --background: 25 15% 8%;
+    --foreground: 35 20% 95%;
 
-    --card: 220 24% 9%;
-    --card-foreground: 220 17% 95%;
+    --card: 25 18% 12%;
+    --card-foreground: 35 20% 95%;
 
-    --popover: 220 24% 9%;
-    --popover-foreground: 220 17% 95%;
+    --popover: 25 18% 12%;
+    --popover-foreground: 35 20% 95%;
 
-    --primary: 240 100% 70%;
-    --primary-foreground: 220 26% 7%;
+    --primary: 35 85% 65%;
+    --primary-foreground: 25 15% 8%;
 
-    --secondary: 280 60% 60%;
-    --secondary-foreground: 220 17% 95%;
+    --secondary: 25 40% 25%;
+    --secondary-foreground: 35 20% 95%;
 
-    --muted: 220 19% 15%;
-    --muted-foreground: 220 9% 65%;
+    --muted: 25 20% 18%;
+    --muted-foreground: 35 15% 70%;
 
-    --accent: 200 100% 70%;
-    --accent-foreground: 220 26% 7%;
+    --accent: 45 95% 70%;
+    --accent-foreground: 25 15% 8%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 19% 15%;
-    --input: 220 19% 15%;
-    --ring: 240 100% 70%;
+    --border: 25 20% 18%;
+    --input: 25 20% 18%;
+    --ring: 35 85% 65%;
 
-    /* Portfolio specific design tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(240 100% 70%), hsl(280 60% 60%), hsl(200 100% 70%));
-    --gradient-card: linear-gradient(145deg, hsl(220 24% 9% / 0.8), hsl(220 19% 15% / 0.9));
-    --shadow-glow: 0 0 30px hsl(240 100% 70% / 0.3);
-    --shadow-card: 0 10px 40px hsl(220 26% 7% / 0.5);
+    /* Photography specific design tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(25 15% 8%), hsl(35 25% 15%), hsl(45 35% 20%));
+    --gradient-card: linear-gradient(145deg, hsl(25 18% 12% / 0.9), hsl(25 20% 18% / 0.95));
+    --shadow-glow: 0 0 30px hsl(35 85% 65% / 0.2);
+    --shadow-card: 0 10px 40px hsl(25 15% 8% / 0.6);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
