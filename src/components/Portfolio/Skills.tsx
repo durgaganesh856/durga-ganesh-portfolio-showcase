@@ -1,52 +1,52 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
-  Code, 
-  Database, 
-  TestTube, 
-  Settings,
-  Globe,
-  Monitor,
-  Zap,
-  Target
+  Camera, 
+  Heart, 
+  Users, 
+  Building2,
+  Palette,
+  Gift,
+  Star,
+  Clock
 } from "lucide-react";
 
 const Skills = () => {
-  const skillCategories = [
+  const serviceCategories = [
     {
-      title: "Frontend Technologies",
-      icon: <Monitor className="h-6 w-6" />,
-      skills: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Responsive Design"],
+      title: "Wedding Photography",
+      icon: <Heart className="h-6 w-6" />,
+      services: ["Bridal Portraits", "Ceremony Coverage", "Reception Photography", "Pre-Wedding Shoots"],
       color: "from-accent to-primary"
     },
     {
-      title: "Programming Languages",
-      icon: <Code className="h-6 w-6" />,
-      skills: ["Java", "JavaScript", "SQL"],
+      title: "Portrait Photography",
+      icon: <Users className="h-6 w-6" />,
+      services: ["Individual Portraits", "Family Photography", "Professional Headshots", "Maternity Shoots"],
       color: "from-primary to-secondary"
     },
     {
-      title: "Testing & Automation",
-      icon: <TestTube className="h-6 w-6" />,
-      skills: ["Selenium WebDriver", "Test Automation", "Quality Assurance"],
+      title: "Event Photography",
+      icon: <Gift className="h-6 w-6" />,
+      services: ["Birthday Parties", "Anniversary Celebrations", "Cultural Events", "Private Functions"],
       color: "from-secondary to-accent"
     },
     {
-      title: "Adobe Campaign",
-      icon: <Target className="h-6 w-6" />,
-      skills: ["Campaign Development", "Workflow Automation", "Email Marketing", "Customer Journey"],
+      title: "Commercial Photography",
+      icon: <Building2 className="h-6 w-6" />,
+      services: ["Corporate Events", "Product Photography", "Business Portraits", "Brand Photography"],
       color: "from-accent to-primary"
     },
     {
-      title: "API & Integration",
-      icon: <Globe className="h-6 w-6" />,
-      skills: ["REST API", "SOAP API", "Postman", "API Testing", "Web Services"],
+      title: "Creative Services",
+      icon: <Palette className="h-6 w-6" />,
+      services: ["Fashion Photography", "Artistic Portraits", "Creative Concepts", "Editorial Shoots"],
       color: "from-primary to-secondary"
     },
     {
-      title: "Tools & Project Management",
-      icon: <Settings className="h-6 w-6" />,
-      skills: ["Jira", "Version Control", "Agile Methodology"],
+      title: "Special Packages",
+      icon: <Star className="h-6 w-6" />,
+      services: ["Custom Packages", "Multi-Day Events", "Destination Shoots", "Photo Albums"],
       color: "from-secondary to-accent"
     }
   ];
@@ -56,15 +56,15 @@ const Skills = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
-            Technical Skills
+            Photography Services
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive expertise across development, testing, and marketing automation platforms
+            Comprehensive photography services tailored to capture your most precious moments with professional excellence
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skillCategories.map((category, index) => (
+          {serviceCategories.map((category, index) => (
             <Card 
               key={index} 
               className="bg-gradient-card border-border/50 hover:shadow-card transition-all duration-300 hover:scale-105 group"
@@ -79,13 +79,13 @@ const Skills = () => {
                 </h3>
                 
                 <div className="flex flex-wrap gap-2">
-                  {category.skills.map((skill, skillIndex) => (
+                  {category.services.map((service, serviceIndex) => (
                     <Badge 
-                      key={skillIndex}
+                      key={serviceIndex}
                       variant="secondary" 
                       className="bg-muted/50 hover:bg-primary/20 transition-colors duration-200"
                     >
-                      {skill}
+                      {service}
                     </Badge>
                   ))}
                 </div>
@@ -99,13 +99,27 @@ const Skills = () => {
           <Card className="bg-gradient-card border-primary/20 max-w-4xl mx-auto">
             <CardContent className="p-8">
               <div className="flex items-center justify-center mb-4">
-                <Zap className="h-8 w-8 text-primary mr-3" />
-                <h3 className="text-2xl font-bold">Adobe Campaign Specialist</h3>
+                <Camera className="h-8 w-8 text-primary mr-3" />
+                <h3 className="text-2xl font-bold">Why Choose GS Photography?</h3>
               </div>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Specialized in developing and optimizing Adobe Campaign solutions, creating automated workflows, 
-                and implementing comprehensive testing strategies using modern development practices and API integrations.
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                With years of experience and a passion for storytelling through imagery, we deliver 
+                exceptional photography services that capture authentic emotions and create lasting memories.
               </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="flex items-center justify-center space-x-3">
+                  <Clock className="h-6 w-6 text-primary" />
+                  <span className="font-medium">Professional Timeline</span>
+                </div>
+                <div className="flex items-center justify-center space-x-3">
+                  <Star className="h-6 w-6 text-primary" />
+                  <span className="font-medium">Premium Quality</span>
+                </div>
+                <div className="flex items-center justify-center space-x-3">
+                  <Heart className="h-6 w-6 text-primary" />
+                  <span className="font-medium">Personal Touch</span>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>

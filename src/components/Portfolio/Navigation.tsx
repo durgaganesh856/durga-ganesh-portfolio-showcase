@@ -18,8 +18,8 @@ const Navigation = () => {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
+    { name: "Services", href: "#services" },
+    { name: "Gallery", href: "#gallery" },
     { name: "Contact", href: "#contact" }
   ];
 
@@ -41,7 +41,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="font-bold text-xl bg-gradient-hero bg-clip-text text-transparent">
-            DG
+            GS Photography
           </div>
 
           {/* Desktop Navigation */}
@@ -60,7 +60,7 @@ const Navigation = () => {
               className="bg-primary hover:bg-primary/90 transition-smooth"
               onClick={() => scrollToSection("#contact")}
             >
-              Hire Me
+              Book Now
             </Button>
           </div>
 
@@ -88,12 +88,12 @@ const Navigation = () => {
                   {item.name}
                 </button>
               ))}
-              <Button 
+               <Button 
                 size="sm" 
                 className="w-full bg-primary hover:bg-primary/90 transition-smooth mt-4"
                 onClick={() => scrollToSection("#contact")}
               >
-                Hire Me
+                Book Now
               </Button>
             </div>
           </div>

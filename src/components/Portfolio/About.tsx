@@ -1,10 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { 
-  User, 
-  Briefcase, 
-  GraduationCap, 
-  Award,
+  Camera, 
+  Heart, 
+  Award, 
+  Eye,
   Calendar,
   MapPin
 } from "lucide-react";
@@ -12,34 +12,34 @@ import {
 const About = () => {
   const highlights = [
     {
-      icon: <Briefcase className="h-5 w-5" />,
-      label: "Role",
-      value: "Adobe Campaign Developer"
+      icon: <Camera className="h-5 w-5" />,
+      label: "Specialty",
+      value: "Portrait & Wedding Photography"
     },
     {
       icon: <Calendar className="h-5 w-5" />,
       label: "Experience",
-      value: "Professional Developer"
+      value: "5+ Years Professional"
     },
     {
       icon: <Award className="h-5 w-5" />,
-      label: "Specialization",
-      value: "Marketing Automation"
+      label: "Style",
+      value: "Artistic & Documentary"
     },
     {
       icon: <MapPin className="h-5 w-5" />,
-      label: "Focus",
-      value: "Full-Stack Development"
+      label: "Location",
+      value: "Hyderabad, India"
     }
   ];
 
   const expertise = [
-    "Adobe Campaign Classic & Standard",
-    "Email Marketing Automation",
-    "Customer Journey Mapping",
-    "API Integration & Testing",
-    "Quality Assurance & Testing",
-    "Web Development & Design"
+    "Wedding Photography",
+    "Portrait Photography", 
+    "Event Photography",
+    "Corporate Photography",
+    "Fashion Photography",
+    "Product Photography"
   ];
 
   return (
@@ -47,10 +47,10 @@ const About = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
-            About Me
+            About GS Photography
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Passionate about creating innovative solutions and delivering exceptional digital experiences
+            Passionate about capturing authentic emotions and creating timeless memories through the art of photography
           </p>
         </div>
 
@@ -60,19 +60,19 @@ const About = () => {
             <CardContent className="p-8">
               <div className="flex items-center mb-6">
                 <div className="p-3 rounded-full bg-primary/20 mr-4">
-                  <User className="h-8 w-8 text-primary" />
+                  <Camera className="h-8 w-8 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">Durga Ganesh</h3>
-                  <p className="text-primary font-medium">Adobe Campaign Developer</p>
+                  <h3 className="text-2xl font-bold text-foreground">GS Photography Official</h3>
+                  <p className="text-primary font-medium">Professional Photographer</p>
                 </div>
               </div>
 
               <p className="text-muted-foreground leading-relaxed mb-8">
-                As an Adobe Campaign Developer, I specialize in creating sophisticated marketing automation 
-                solutions and developing robust web applications. My expertise spans across frontend development, 
-                backend programming, automated testing, and API integration, enabling me to deliver comprehensive 
-                digital solutions that drive business success.
+                With over 5 years of experience in professional photography, I specialize in capturing 
+                life's most precious moments through creative storytelling and artistic vision. From intimate 
+                weddings to corporate events, I bring passion and expertise to every shoot, ensuring that 
+                each photograph tells a unique story that you'll treasure forever.
               </p>
 
               <div className="grid grid-cols-2 gap-4">
@@ -91,22 +91,22 @@ const About = () => {
             </CardContent>
           </Card>
 
-          {/* Expertise & Approach */}
+          {/* Photography Specialties */}
           <div className="space-y-8">
             <Card className="bg-gradient-card border-border/50">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <div className="p-3 rounded-full bg-secondary/20 mr-4">
-                    <GraduationCap className="h-8 w-8 text-secondary" />
+                    <Eye className="h-8 w-8 text-secondary" />
                   </div>
-                  <h3 className="text-2xl font-bold">Core Expertise</h3>
+                  <h3 className="text-2xl font-bold">Photography Services</h3>
                 </div>
                 
                 <div className="grid grid-cols-1 gap-3">
-                  {expertise.map((skill, index) => (
+                  {expertise.map((service, index) => (
                     <div key={index} className="flex items-center space-x-3">
                       <div className="w-2 h-2 rounded-full bg-primary"></div>
-                      <span className="text-foreground">{skill}</span>
+                      <span className="text-foreground">{service}</span>
                     </div>
                   ))}
                 </div>
@@ -116,18 +116,18 @@ const About = () => {
             <Card className="bg-gradient-card border-border/50">
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Award className="h-6 w-6 text-accent mr-3" />
-                  Development Approach
+                  <Heart className="h-6 w-6 text-accent mr-3" />
+                  Photography Philosophy
                 </h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  I believe in writing clean, maintainable code and following industry best practices. 
-                  My approach combines technical excellence with user-centered design thinking.
+                  I believe every moment has a story to tell. My approach combines technical excellence 
+                  with creative artistry to capture authentic emotions and genuine connections.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline" className="border-accent/30">Quality Focused</Badge>
-                  <Badge variant="outline" className="border-primary/30">API Integration</Badge>
-                  <Badge variant="outline" className="border-secondary/30">Test Driven</Badge>
-                  <Badge variant="outline" className="border-accent/30">Agile Methodology</Badge>
+                  <Badge variant="outline" className="border-accent/30">Authentic Moments</Badge>
+                  <Badge variant="outline" className="border-primary/30">Creative Vision</Badge>
+                  <Badge variant="outline" className="border-secondary/30">Professional Quality</Badge>
+                  <Badge variant="outline" className="border-accent/30">Personal Touch</Badge>
                 </div>
               </CardContent>
             </Card>

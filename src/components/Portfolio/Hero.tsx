@@ -19,29 +19,29 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Role Badge */}
           <Badge variant="outline" className="mb-6 px-4 py-2 text-lg border-primary/30 bg-card/50 backdrop-blur-sm">
-            Adobe Campaign Developer
+            Professional Photography
           </Badge>
 
           {/* Name */}
           <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-hero bg-clip-text text-transparent">
-            Durga Ganesh
+            GS Photography Official
           </h1>
 
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Crafting exceptional digital experiences through Adobe Campaign development, 
-            automation testing, and API integration
+            Capturing life's precious moments through artistic vision and creative storytelling.
+            Creating timeless memories that last forever.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button size="lg" className="bg-primary hover:bg-primary/90 shadow-glow transition-smooth">
               <Mail className="mr-2 h-5 w-5" />
-              Get In Touch
+              Book a Session
             </Button>
             <Button variant="outline" size="lg" className="border-primary/30 hover:bg-primary/10 transition-smooth">
               <Download className="mr-2 h-5 w-5" />
-              Download Resume
+              View Portfolio
             </Button>
           </div>
 
